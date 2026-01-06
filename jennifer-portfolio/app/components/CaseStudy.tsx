@@ -12,8 +12,8 @@ const projectData: Record<string, any> = {
   "inventory-platform": {
     title: "Internal Inventory & Search Platform",
     client: "English at Large",
-    timeline: "8 weeks",
-    role: "Full-Stack Developer",
+    timeline: "9 months",
+    role: "Project Manager",
     overview:
       "Built a full-stack dashboard with advanced search, user authentication, borrowing workflows, and filtering tools, streamlining book management and improving accessibility for volunteers.",
     problem: {
@@ -88,81 +88,91 @@ const projectData: Record<string, any> = {
       "https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY3Mzc4MjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ],
   },
-  "collaborative-editor": {
+  "white-collaborative-editor": {
     title: "Real-time Collaborative Editor",
-    client: "SaaS Platform (Seed Stage)",
-    timeline: "10 weeks",
+    client: "Personal Product",
+    timeline: "8–10 weeks",
     role: "Full-Stack Developer",
     overview:
-      "Developed a Google Docs-style collaborative editing experience for a product documentation platform with conflict-free real-time collaboration.",
+      "Designed and built a Google Docs–style collaborative editor enabling multiple users to edit documents in real time with conflict-free synchronization.",
     problem: {
       title: "The Challenge",
       description:
-        "The client needed a collaborative editing solution for their documentation platform that would allow multiple team members to work simultaneously without conflicts. Key challenges included:",
+        "Real-time collaboration is difficult to implement reliably. The core challenges included:",
       points: [
-        "Prevent editing conflicts when multiple users edit the same document",
-        "Provide real-time updates with minimal latency",
-        "Show user presence and cursor positions",
-        "Maintain complete version history",
-        "Support rich text formatting and comments",
-        "Scale to handle hundreds of concurrent users",
+        "Synchronizing edits from multiple users without conflicts",
+        "Maintaining low-latency updates across clients",
+        "Handling document persistence and recovery",
+        "Supporting rich text editing without breaking collaboration",
+        "Managing authenticated access to shared documents",
       ],
     },
     solution: {
       title: "The Solution",
       description:
-        "Implemented a real-time collaborative editor using CRDTs (Conflict-free Replicated Data Types) and WebSockets:",
+        "Architected a real-time collaborative editing system using CRDTs and WebSockets:",
       points: [
-        "Yjs for CRDT-based conflict-free collaboration",
-        "WebSocket server for real-time synchronization",
-        "Custom rich text editor built on ProseMirror",
-        "User presence system with cursor tracking",
-        "Complete version history with diff visualization",
-        "Comment threads with real-time notifications",
-        "Optimized for 100+ concurrent users per document",
+        "CRDT-based synchronization with Yjs for conflict-free editing",
+        "WebSocket layer for real-time document updates",
+        "Rich text editor built with TipTap / ProseMirror",
+        "Persistent document storage with PostgreSQL and Prisma",
+        "Authentication and access control using Clerk",
+        "Asset storage for user uploads via Supabase",
       ],
     },
     features: [
       {
         title: "Conflict-free Collaboration",
         description:
-          "Using CRDTs (Yjs), multiple users can edit simultaneously without conflicts or the need for locking mechanisms.",
+          "Multiple users can edit the same document simultaneously without conflicts or locking.",
       },
       {
-        title: "Real-time Presence",
+        title: "Live Presence",
         description:
-          "See who's viewing and editing in real-time with live cursor positions and user avatars.",
+          "Displays active collaborators with live cursors and presence indicators.",
       },
       {
-        title: "Version History",
+        title: "Persistent Documents",
         description:
-          "Complete revision history with the ability to view, compare, and restore previous versions.",
+          "Documents are automatically saved and restored, ensuring no data loss across sessions.",
       },
       {
-        title: "Rich Commenting",
+        title: "Rich Text Editing",
         description:
-          "Thread-based comments with mentions, real-time notifications, and resolve/unresolve functionality.",
+          "Supports structured rich text formatting using a ProseMirror-based editor.",
       },
     ],
     techStack: [
-      { name: "Next.js 14", description: "Frontend and API routes" },
-      { name: "WebSockets", description: "Real-time communication" },
-      { name: "Yjs", description: "CRDT library for conflict resolution" },
-      { name: "ProseMirror", description: "Rich text editing framework" },
-      { name: "PostgreSQL", description: "Document storage and history" },
+      { name: "Next.js (App Router)", description: "Frontend and routing" },
+      { name: "Yjs", description: "CRDT-based collaboration" },
+      { name: "WebSockets", description: "Real-time synchronization" },
+      { name: "Node.js / Express", description: "Backend services" },
+      { name: "PostgreSQL", description: "Document persistence" },
+      { name: "Prisma", description: "ORM and data modeling" },
       { name: "Tailwind CSS", description: "UI styling" },
+      { name: "Clerk", description: "Authentication" },
+      { name: "Supabase", description: "File storage" },
     ],
     results: [
-      { metric: "<100ms", description: "Average synchronization latency" },
-      { metric: "0", description: "Edit conflicts reported" },
-      { metric: "5x", description: "Faster document collaboration" },
       {
-        metric: "100+",
-        description: "Concurrent users supported per document",
+        metric: "Real-time",
+        description: "Multi-user document editing with instant synchronization",
+      },
+      {
+        metric: "Conflict-free",
+        description: "No merge conflicts during concurrent editing sessions",
+      },
+      {
+        metric: "Production-ready",
+        description: "Designed with scalability and persistence in mind",
+      },
+      {
+        metric: "Scalable architecture",
+        description:
+          "Designed to support additional collaboration features and growing user activity",
       },
     ],
     images: [
-      "https://images.unsplash.com/photo-1664943861653-609134fb6b3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xsYWJvcmF0aXZlJTIwd29ya3NwYWNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3Njc0NjY4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "https://images.unsplash.com/photo-1664943861653-609134fb6b3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xsYWJvcmF0aXZlJTIwd29ya3NwYWNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3Njc0NjY4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     ],
   },
