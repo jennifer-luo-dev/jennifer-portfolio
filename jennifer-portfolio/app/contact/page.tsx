@@ -31,7 +31,7 @@ export default function ContactPage() {
           href={contact.resumeHref}
           className="inline-flex items-center gap-2 rounded bg-label px-5 py-3 font-mono text-xs uppercase tracking-wider text-text hover:opacity-90 transition-opacity duration-150"
         >
-          Download résumé (PDF)
+          Download Resume (PDF)
         </a>
         <a
           href={`mailto:${contact.email}`}
