@@ -7,6 +7,22 @@ export const bio = {
     "A self-driving lab system for soft robotic actuator fabrication at the Nemitz Lab",
 };
 
+export const about = {
+  paragraph:
+    "I'm a rising senior studying Computer Science at Tufts, currently working \
+    as a software researcher in the Nemitz Lab, where I build EvoFab—a self-driving \
+    lab interface that automates soft robotic actuator fabrication. What excites \
+    me most about software engineering is how it opens the door to learning across \
+    disciplines. I enjoy seeking out diverse experiences that challenge me to \
+    understand new fields, whether that's building robotics systems at the lab \
+    or spending last summer tending to patients at Yale New Haven Hospital. This\
+     fall, I'll be joining AWS as a Software Development\
+     Engineer Intern on the Transit Gateway team, where I'm excited to continue\
+     learning at scale.",
+  photoSrc: "/about/jennifer.jpg",
+  photoAlt: "Jennifer Luo, Software Engineer",
+};
+
 export const contact = {
   email: "jennifer.luo@tufts.edu",
   github: "https://github.com/jennifer-luo-dev",
@@ -48,7 +64,15 @@ export const experience: ExperienceEntry[] = [
       "Designed a PostgreSQL schema for experiment tracking and built a computer vision pipeline (OpenCV, RGB-D camera) for shadow-invariant actuator segmentation and curvature regression.",
       "Integrated a UR7e robot arm and Robotiq Hand-E gripper for automated fabrication handoff, including RTDE register-based remote control and REST API program triggering.",
     ],
-    tech: ["Next.js", "Node.js", "Python", "FastAPI", "PostgreSQL", "Supabase", "OpenCV"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "OpenCV",
+    ],
   },
   {
     slug: "jumbocode",
@@ -62,7 +86,15 @@ export const experience: ExperienceEntry[] = [
       "Managed 12 project teams as Head of PM, coaching PMs on agile system design.",
       "Built backend infrastructure for nonprofit HomeStart (MongoDB, Prisma, Node.js).",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "MongoDB", "Node.js"],
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "MongoDB",
+      "Node.js",
+    ],
   },
   {
     slug: "tufts-ta",
@@ -99,7 +131,15 @@ export const projects: Project[] = [
       "Full-stack self-driving lab system automating soft robotic actuator fabrication, robot arm handoff, pneumatic testing, and ML-based curvature characterization.",
     description:
       "EvoFab is a full-stack self-driving lab (SDL) system built at the Nemitz Lab to automate soft robotic actuator fabrication. It coordinates fabrication, robot arm handoff, pneumatic testing, and ML-based curvature characterization into a single closed-loop pipeline — reducing the manual overhead of iterating on actuator designs. The system integrates a UR7e robot arm and Robotiq Hand-E gripper for automated handoff, a PostgreSQL schema for experiment tracking, and a computer vision pipeline for shadow-invariant actuator segmentation and curvature regression.",
-    tech: ["Next.js", "Node.js", "Python", "FastAPI", "PostgreSQL", "Supabase", "OpenCV"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "OpenCV",
+    ],
     status: "in progress",
     flagship: true,
   },
@@ -130,7 +170,15 @@ export const projects: Project[] = [
       "Full-stack text editor with Clerk authentication and Notion-style block editing.",
     description:
       "White is a full-stack text editor with Clerk authentication and Notion-style block editing, built on React and Next.js with a Prisma/PostgreSQL backend hosted on AWS RDS.",
-    tech: ["React", "Next.js", "Node.js", "Prisma", "PostgreSQL", "AWS RDS", "Tailwind CSS"],
+    tech: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "AWS RDS",
+      "Tailwind CSS",
+    ],
     status: "shipped",
   },
   {
@@ -155,7 +203,11 @@ export const projects: Project[] = [
   },
 ];
 
-export const featuredProjectSlugs = ["evofab-sdl-interface", "applyshift", "white"];
+export const featuredProjectSlugs = [
+  "evofab-sdl-interface",
+  "applyshift",
+  "white",
+];
 
 export type SkillGroup = {
   label: string;
@@ -165,7 +217,16 @@ export type SkillGroup = {
 export const skills: SkillGroup[] = [
   {
     label: "Languages",
-    items: ["Python", "C++", "C", "TypeScript", "JavaScript", "Java", "MATLAB", "HTML/CSS"],
+    items: [
+      "Python",
+      "C++",
+      "C",
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "MATLAB",
+      "HTML/CSS",
+    ],
   },
   {
     label: "Frameworks",
