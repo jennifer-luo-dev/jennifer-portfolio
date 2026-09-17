@@ -50,7 +50,7 @@ export const experience: ExperienceEntry[] = [
     dates: "Sept 2026 - Present",
     location: "Santa Clara, CA",
     bullets: [
-      "Implementing BGP Graceful Restart (RFC 4724) on Transit Gateway's routing plane to eliminate traffic blackholes when customer BGP sessions drop despite a healthy data plane, addressing a real production failure mode.",
+      "Implementing BGP Graceful Restart (RFC 4724) on AWS Transit Gateway's routing plane to preserve routing availability across customer BGP session restarts.",
       "Designing stale-route retention and route-hold coordination across a distributed, multi-tenant BGP architecture serving live customer traffic at scale.",
       "Building CloudWatch metrics/alarms to validate correctness pre-launch and gate a feature-flagged, staged rollout across a large multi-tenant fleet.",
       "Shipping changes in Python and Scala across a large existing codebase under full design-review, code-review, and CI/CD discipline.",
