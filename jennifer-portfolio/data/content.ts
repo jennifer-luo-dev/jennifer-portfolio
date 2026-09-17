@@ -4,7 +4,7 @@ export const bio = {
   summary:
     "Rising senior in Computer Science at Tufts University (Class of 2027), GPA 3.73. Currently a software researcher at the Nemitz Lab building a self-driving lab system for soft robotics research. Starting a Software Development Engineer internship at AWS (Transit Gateway team) in Santa Clara, CA in August 2026.",
   nowBuilding:
-    "A self-driving lab system for soft robotic actuator fabrication at the Nemitz Lab",
+    "Implementing BGP Graceful Restart and routing reliability features on AWS Transit Gateway",
 };
 
 export const about = {
@@ -47,11 +47,16 @@ export const experience: ExperienceEntry[] = [
     slug: "aws",
     role: "Software Development Engineer Intern",
     org: "AWS — Transit Gateway",
-    dates: "Aug 2026",
+    dates: "Sept 2026 - Present",
     location: "Santa Clara, CA",
-    bullets: ["Incoming intern on the Transit Gateway team."],
+    bullets: [
+      "Implementing BGP Graceful Restart (RFC 4724) on Transit Gateway's routing plane to eliminate traffic blackholes when customer BGP sessions drop despite a healthy data plane, addressing a real production failure mode.",
+      "Designing stale-route retention and route-hold coordination across a distributed, multi-tenant BGP architecture serving live customer traffic at scale.",
+      "Building CloudWatch metrics/alarms to validate correctness pre-launch and gate a feature-flagged, staged rollout across a large multi-tenant fleet.",
+      "Shipping changes in Python and Scala across a large existing codebase under full design-review, code-review, and CI/CD discipline.",
+    ],
     tech: ["AWS"],
-    upcoming: true,
+    upcoming: false,
   },
   {
     slug: "nemitz-lab",
