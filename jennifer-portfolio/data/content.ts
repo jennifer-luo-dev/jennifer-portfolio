@@ -55,7 +55,15 @@ export const experience: ExperienceEntry[] = [
       "Building CloudWatch metrics/alarms to validate correctness pre-launch and gate a feature-flagged, staged rollout across a large multi-tenant fleet.",
       "Shipping changes in Python and Scala across a large existing codebase under full design-review, code-review, and CI/CD discipline.",
     ],
-    tech: ["AWS"],
+    tech: [
+      "AWS",
+      "CI/CD",
+      "Python",
+      "Scala",
+      "EC2",
+      "VPC",
+      "Network Infrastructure",
+    ],
     upcoming: false,
   },
   {
@@ -145,7 +153,7 @@ export const projects: Project[] = [
       "Supabase",
       "OpenCV",
     ],
-    status: "in progress",
+    status: "shipped",
     flagship: true,
   },
   {
@@ -262,7 +270,7 @@ export const skills: SkillGroup[] = [
 
 export const research = {
   title: "Self-Driving Labs for Soft Robotics",
-  status: "In progress — unpublished",
+  status: "Shipped — unpublished",
   motivation:
     "Developing new soft robotic actuators is slow because fabrication, testing, and characterization are largely manual: a researcher casts an actuator, waits for it to cure, mounts it by hand, runs pneumatic tests, and manually estimates curvature from video or photos before deciding on the next design iteration. That loop limits how much of the design space researchers can actually explore.",
   contribution:
