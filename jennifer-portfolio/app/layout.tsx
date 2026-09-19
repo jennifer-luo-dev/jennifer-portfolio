@@ -33,8 +33,7 @@ export const metadata: Metadata = {
     "Jennifer Luo is a rising senior in Computer Science at Tufts University, building a self-driving lab system for soft robotics research and starting an SDE internship at AWS in 2026.",
   openGraph: {
     title: "Jennifer Luo — Software Engineer",
-    description:
-      "CS @ Tufts '27 · Software Researcher · Incoming SWE Intern @ AWS",
+    description: "CS @ Tufts '27 · SDE Intern @ Amazon Web Services (AWS)",
     url: siteUrl,
     siteName: "Jennifer Luo",
     type: "website",
@@ -42,8 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Jennifer Luo — Software Engineer",
-    description:
-      "CS @ Tufts '27 · Software Researcher · Incoming SWE Intern @ AWS",
+    description: "CS @ Tufts '27 · SDE Intern @ Amazon Web Services (AWS)",
   },
 };
 
@@ -53,7 +51,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${publicSans.variable} ${plexMono.variable}`}>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${publicSans.variable} ${plexMono.variable}`}
+    >
       <body className="antialiased bg-bg text-text">
         <a
           href="#main"

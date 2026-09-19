@@ -9,7 +9,7 @@ export function FeaturedWork() {
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-16">
+    <section className="pt-20">
       <div className="flex items-baseline justify-between">
         <h2 className="font-display text-2xl text-text sm:text-3xl">
           Featured work

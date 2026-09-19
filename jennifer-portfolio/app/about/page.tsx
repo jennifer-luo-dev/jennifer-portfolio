@@ -3,12 +3,10 @@ import { About } from "../components/About";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "About Jennifer Luo — CS student at Tufts, software researcher at the Nemitz Lab, incoming AWS SDE intern.",
+  description: "About Jennifer Luo — CS student at Tufts, AWS SDE intern.",
   openGraph: {
     title: "About — Jennifer Luo",
-    description:
-      "About Jennifer Luo — CS student at Tufts, software researcher at the Nemitz Lab, incoming AWS SDE intern.",
+    description: "About Jennifer Luo — CS student at Tufts, AWS SDE intern.",
   },
 };
 

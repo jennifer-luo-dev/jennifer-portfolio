@@ -1,24 +1,21 @@
 export const bio = {
   name: "Jennifer Luo",
-  tagline: "CS @ Tufts '27 · Software Researcher · Incoming SWE Intern @ AWS",
+  tagline: "CS @ Tufts '27 · SDE Intern @ Amazon Web Services",
   summary:
-    "Rising senior in Computer Science at Tufts University (Class of 2027), GPA 3.73. Currently a software researcher at the Nemitz Lab building a self-driving lab system for soft robotics research. Starting a Software Development Engineer internship at AWS (Transit Gateway team) in Santa Clara, CA in August 2026.",
-  nowBuilding:
-    "Implementing BGP Graceful Restart and routing reliability features on AWS Transit Gateway",
+    "Senior in Computer Science at Tufts University (Class of 2027), GPA 3.73. Currently working on the AWS Transit Gateway team.",
+  nowBuilding: "BGP peering-session lifecycle logic in the AWS routing plane",
 };
 
 export const about = {
   paragraph:
-    "I'm a rising senior studying Computer Science at Tufts, currently working \
-    as a software researcher in the Nemitz Lab, where I build EvoFab—a self-driving \
-    lab interface that automates soft robotic actuator fabrication. What excites \
-    me most about software engineering is how it opens the door to learning across \
-    disciplines. I enjoy seeking out diverse experiences that challenge me to \
-    understand new fields, whether that's building robotics systems at the lab \
-    or spending last summer tending to patients at Yale New Haven Hospital. This\
-     fall, I'll be joining AWS as a Software Development\
-     Engineer Intern on the Transit Gateway team, where I'm excited to continue\
-     learning at scale.",
+    "I'm a senior studying Computer Science at Tufts, currently working as a \
+SDE Intern at Amazon Web Services(AWS) on the Transit Gateway team, where \
+I'm excited to be learning and building at scale. What excites me most about \
+software engineering is how it opens the door to learning across disciplines. \
+I enjoy seeking out diverse experiences that challenge me to understand new \
+fields, whether that's building self-driving lab software for soft robotic \
+actuator fabrication as a researcher in the Nemitz Lab, or spending last summer \
+tending to patients at Yale New Haven Hospital.",
   photoSrc: "/about/jennifer.jpg",
   photoAlt: "Jennifer Luo, Software Engineer",
 };
@@ -46,11 +43,11 @@ export const experience: ExperienceEntry[] = [
   {
     slug: "aws",
     role: "Software Development Engineer Intern",
-    org: "AWS — Transit Gateway",
+    org: "Amazon Web Services (AWS), Transit Gateway Team",
     dates: "Sept 2026 - Present",
     location: "Santa Clara, CA",
     bullets: [
-      "Implementing BGP Graceful Restart (RFC 4724) on AWS Transit Gateway's routing plane to preserve routing availability across customer BGP session restarts.",
+      "Implementing BGP peering-session lifecycle logic in AWS Transit Gateway's routing plane: how routes learned from a peer are retained, reconciled, and withdrawn when a peer's session drops and re-establishes",
       "Designing stale-route retention and route-hold coordination across a distributed, multi-tenant BGP architecture serving live customer traffic at scale.",
       "Building CloudWatch metrics/alarms to validate correctness pre-launch and gate a feature-flagged, staged rollout across a large multi-tenant fleet.",
       "Shipping changes in Python and Scala across a large existing codebase under full design-review, code-review, and CI/CD discipline.",

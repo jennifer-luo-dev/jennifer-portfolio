@@ -5,11 +5,11 @@ import { GrooveLine } from "../components/GrooveLine";
 export const metadata: Metadata = {
   title: "Experience",
   description:
-    "Jennifer Luo's experience: Nemitz Lab, JumboCode, Tufts CS TA, and an incoming AWS internship.",
+    "Jennifer Luo's experience: Nemitz Lab, JumboCode, Tufts CS TA, and AWS internship.",
   openGraph: {
     title: "Experience — Jennifer Luo",
     description:
-      "Jennifer Luo's experience: Nemitz Lab, JumboCode, Tufts CS TA, and an incoming AWS internship.",
+      "Jennifer Luo's experience: Nemitz Lab, JumboCode, Tufts CS TA, and AWS internship.",
   },
 };
 
